@@ -9,4 +9,6 @@ type TButtonProps = {
     }
 }
 
+export type TButtonHook = Pick<TButtonProps, 'type' | 'disabled'>
+
 export default TButtonProps
