@@ -1,7 +1,6 @@
-type TButtonProps = {
+export type TButtonProps = {
     title: string
     onPress: () => void
-    type?: 'PRIMARY' | 'SECONDARY'
     disabled?: boolean
     customClass?: {
         container?: string
@@ -9,6 +8,8 @@ type TButtonProps = {
     }
 }
 
-export type TButtonHook = Pick<TButtonProps, 'type' | 'disabled'>
-
-export default TButtonProps
+export type TButtonParentProps = TButtonProps & {
+    containterDefaultClass: string
+    containterPressedClass: string
+    textClass: string
+}
