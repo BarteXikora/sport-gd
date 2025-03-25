@@ -11,10 +11,4 @@ const Title = ({ children, customClass }: TUiProps) => {
     )
 }
 
-const Accent = ({ children, customClass }: TUiProps) => {
-    return <Text className={`color-primary-500 ${customClass}`}>{children}</Text>
-}
-
 export default Title
-
-export { Accent }
